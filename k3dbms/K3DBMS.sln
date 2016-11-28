@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "K3DBMS", "K3DBMS\K3DBMS.vcproj", "{53D96518-0B3B-48DF-B857-6E979A17860C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demos", "Demos\Demos.vcproj", "{BE20C097-72CC-4F77-A1A7-3EE5A745033C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53D96518-0B3B-48DF-B857-6E979A17860C} = {53D96518-0B3B-48DF-B857-6E979A17860C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53D96518-0B3B-48DF-B857-6E979A17860C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53D96518-0B3B-48DF-B857-6E979A17860C}.Debug|Win32.Build.0 = Debug|Win32
+		{53D96518-0B3B-48DF-B857-6E979A17860C}.Release|Win32.ActiveCfg = Release|Win32
+		{53D96518-0B3B-48DF-B857-6E979A17860C}.Release|Win32.Build.0 = Release|Win32
+		{BE20C097-72CC-4F77-A1A7-3EE5A745033C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE20C097-72CC-4F77-A1A7-3EE5A745033C}.Debug|Win32.Build.0 = Debug|Win32
+		{BE20C097-72CC-4F77-A1A7-3EE5A745033C}.Release|Win32.ActiveCfg = Release|Win32
+		{BE20C097-72CC-4F77-A1A7-3EE5A745033C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

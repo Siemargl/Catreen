@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="K3DBMS" />
+		<Option pch_mode="2" />
+		<Option compiler="dmc" />
+		<Option show_notes="1">
+			<notes>
+				<![CDATA[14-05-2010
+Main part of debug & straining done.
+
+4-05-2010
+New design done. Some refactoring still needed.
+Begin modular testing.
+
+21-04-2010
+Start new design. Var.len objects
+
+23-03-2010
+release 1  
+! detected mem leaks - fixed
+
+22-03-2010
+Fullscan + Rangescan
+
+20-03-2010
++k3speed.cpp  -new test
+
+18-03-2010
++search by non-unique key
++file emulation disabled
++-file read/save (no file traversing)
+
+6-03-2010  
+--error in hashFilename()
++new file emulation
++integrity block check by key & crc32
+
+12.02.2010 – Birthday]]>
+			</notes>
+		</Option>
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="..\Debug\K3DBMS" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="dmc" />
+				<Compiler>
+					<Add option="-D" />
+					<Add option="-Ar" />
+					<Add option="-Ae" />
+					<Add option="-Ab" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="..\Release\K3DBMS" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="dmc" />
+				<Compiler>
+					<Add option="-o" />
+					<Add option="-Ar" />
+					<Add option="-Ae" />
+					<Add option="-Ab" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="CCRC32.Cpp" />
+		<Unit filename="CCRC32.H" />
+		<Unit filename="ReadMe.txt" />
+		<Unit filename="k3bufblock.cpp" />
+		<Unit filename="k3bufcache.cpp" />
+		<Unit filename="k3dbms.h" />
+		<Unit filename="k3disk.cpp" />
+		<Unit filename="k3entity.cpp" />
+		<Unit filename="k3index.cpp" />
+		<Unit filename="k3trans.cpp" />
+		<Unit filename="k3utils.cpp" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="targetver.h" />
+		<Unit filename="К3СУБД.doc" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

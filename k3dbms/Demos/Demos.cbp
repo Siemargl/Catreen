@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Demos" />
+		<Option pch_mode="2" />
+		<Option compiler="dmc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="..\Debug\Demos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="1" />
+				<Option compiler="dmc" />
+				<Compiler>
+					<Add option="-D" />
+					<Add option="-Ar" />
+					<Add option="-Ae" />
+					<Add option="-Ab" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="..\k3dbms" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="..\k3dbms" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="..\Debug\K3DBMS.lib" />
+					<Add library="ole32.lib" />
+					<Add library="snnd.lib" />
+					<Add directory="$(SolutionDir)Debug Win32" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="..\Release\Demos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="dmc" />
+				<Compiler>
+					<Add option="-o" />
+					<Add option="-Ar" />
+					<Add option="-Ae" />
+					<Add option="-Ab" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="..\k3dbms" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="..\k3dbms" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="..\Release\k3dbms.lib" />
+					<Add library="ole32.lib" />
+					<Add directory="$(SolutionDir)Release Win32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="ReadMe.txt" />
+		<Unit filename="k3demoindex.cpp" />
+		<Unit filename="k3demomulti.cpp" />
+		<Unit filename="k3demos.cpp" />
+		<Unit filename="k3demospeed.cpp" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="targetver.h" />
+		<Unit filename="zzz.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
